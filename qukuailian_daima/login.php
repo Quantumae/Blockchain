@@ -12,8 +12,9 @@ if ($conn->connect_error) {
     die("连接失败: " . $conn->connect_error);
 }
 
+// 处理表单数据
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $user = $_POST["username"];
+    $user = $conn->real_escape_string($_POST["username"]);
     $pass = $_POST["password"];
 
     $sql = "SELECT password FROM users WHERE username='$user'";
@@ -22,14 +23,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         if (password_verify($pass, $row['password'])) {
-            echo "登录成功";
+            // 登录成功后跳转到百度
+            header("Location: home.html");
+            exit(); // 确保脚本停止执行
         } else {
-            echo "密码错误";
+            echo "wrong password";
         }
     } else {
-        echo "用户名不存在";
+        echo "no user";
     }
-
-    $conn->close();
+} else {
+    echo "problem";
 }
+
+$conn->close();
 ?>

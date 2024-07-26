@@ -8,8 +8,8 @@ $dbname = "forum";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // 检查连接
-if ($conn->connect_error) {
-    die("连接失败: " . $conn->connect_error);
+if(!$conn){
+    die("Connection failed. Reason:".mysqli_connect_error());
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -19,9 +19,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO users (username, password) VALUES ('$user', '$pass')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "注册成功";
+        echo "success";
+        header("Location: login.html");
+        exit(); // 确保脚本停止执行
     } else {
-        echo "注册失败: " . $conn->error;
+        echo "there is something wrong " . $conn->error;
     }
 
     $conn->close();
