@@ -4,17 +4,20 @@ $username = "root";
 $password = "";
 $dbname = "forum";
 
-// ��������
+// 创建连接
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// �������
+// 检查连接
 if ($conn->connect_error) {
-    die("����ʧ��: " . $conn->connect_error);
+    die("连接失败: " . $conn->connect_error);
+}
+else{
+    echo"connected";
 }
 
-// ����������
+// 处理表单数据
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $user = $conn->real_escape_string($_POST["public_key"]);
+    $user = $conn->real_escape_string($_POST["username"]);
     $pass = $_POST["password"];
 
     $sql = "SELECT password FROM users WHERE username='$user'";
@@ -23,16 +26,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         if (password_verify($pass, $row['password'])) {
-            header("Location: home.html");
-            exit();
+            // 登录成功后跳转到百度
+            header("Location: http://www.baidu.com");
+            exit(); // 确保脚本停止执行
         } else {
-            echo "wrong password";
+            echo "密码错误";
         }
     } else {
-        echo "no user";
+        echo "用户名不存在";
     }
 } else {
-    echo "problem";
+    echo "无效的请求方法";
 }
 
 $conn->close();

@@ -36,23 +36,6 @@
             padding: 10px;
             text-align: center;
         }
-        .moving-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 50px; /* 根据需要调整图片宽度 */
-            height: 50px; /* 根据需要调整图片高度 */
-            animation: move 5s linear infinite;
-        }
-        @keyframes move {
-            0% {
-                transform: translate(0, 0);
-            }
-
-            100% {
-                transform: translate(50vw, 50vh);
-            }
-        }
         .nav a {
             color: #fff;
             margin: 0 15px;
@@ -153,13 +136,11 @@
         <a href="about_us.html">关于我们</a>
         <a href="call_us.html">联系我们</a>
     </div>
-    <div class="moving-image">
-        <a href="https://www.zju.edu.cn/" target="_blank">
-            <img src="ZJU.png" alt="论坛轮播图">
-        </a>
-    </div>
     <div class="container">
         <div class="welcome">
+            <div class="carousel">
+                <img src="ZJU.png" alt="论坛轮播图">
+            </div>
             <h2>欢迎来到白度贴巴论坛</h2>
             <p>在这里你可以讨论技术问题，分享生活趣事，了解最新娱乐八卦，以及获取丰富的学习资源。加入我们的讨论，与全球的用户交流互动。</p>
         </div>
@@ -179,10 +160,10 @@
         <div class="section">
             <h2>最新帖子</h2>
             <ul class="post-list">
-                <li><a href="post1.html">如何在Python中使用装饰器？</a></li>
-                <li><a href="post2.html">区块链和元宇宙是什么？</a></li>
-                <li><a href="post3.html">如何快速学习一门新语言？</a></li>
-                <li><a href="post4.html">你最喜欢的旅行地是哪儿？</a></li>
+                <li><a href="postI.html">如何在Python中使用装饰器？</a></li>
+                <li><a href="postII.html">区块链和元宇宙是什么？</a></li>
+                <li><a href="postIII.html">如何快速学习一门新语言？</a></li>
+                <li><a href="postIV.html">你最喜欢的旅行地是哪儿？</a></li>
             </ul>
         </div>
         <div class="section">

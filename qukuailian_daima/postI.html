@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>如何在Python中使用装饰器？</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #66ccff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav {
+            background-color: #66ccff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+            .nav a {
+                color: #fff;
+                margin: 0 15px;
+                text-decoration: none;
+            }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            max-width: 1200px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .post-content {
+            line-height: 1.6;
+        }
+
+        .comment-section {
+            margin-top: 40px;
+        }
+
+            .comment-section h2 {
+                background-color: #ddd;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+        .comment {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            .comment h3 {
+                margin-top: 0;
+            }
+
+        .comment-form {
+            margin-top: 20px;
+        }
+
+            .comment-form textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+            }
+
+            .comment-form button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: #fff;
+                cursor: pointer;
+            }
+
+                .comment-form button:hover {
+                    background-color: #0056b3;
+                }
+
+        .footer {
+            background-color: #66ccff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>白度贴巴</h1>
+    </div>
+    <div class="nav">
+        <a href="home.html">首页</a>
+        <a href="board.html">论坛版块</a>
+        <a href="about_us.html">关于我们</a>
+        <a href="call_us.html">联系我们</a>
+    </div>
+    <div class="container">
+        <div class="post-title">
+            <h1>如何在Python中使用装饰器？</h1>
+        </div>
+        <div class="post-content">
+            <p>装饰器是Python中一种非常强大的工具，可以用来修改函数或方法的行为。通过使用装饰器，我们可以在不修改函数本身的情况下，添加额外的功能或逻辑。</p>
+            <p>在Python中，装饰器实际上是一个函数，它接受一个函数作为参数，并返回一个新的函数。这个新的函数通常会包含原始函数的功能，并且可以添加额外的功能。</p>
+            <h2>示例代码：</h2>
+            <pre><code>def decorator(func):
+    def wrapper(*args, **kwargs):
+        print("Before the function is called.")
+        result = func(*args, **kwargs)
+        print("After the function is called.")
+        return result
+    return wrapper
+
+@decorator
+def say_hello(name):
+    print(f"Hello, {name}!")
+
+say_hello("World")</code></pre>
+            <p>在上面的示例中，`decorator` 是一个装饰器，它在调用 `say_hello` 函数之前和之后打印一些消息。使用 `@decorator` 语法，我们可以将装饰器应用于 `say_hello` 函数。</p>
+        </div>
+        <div class="comment-section">
+            <h2>评论区</h2>
+            <div class="comment">
+                <h3>用户1</h3>
+                <p>这是一个非常有用的帖子！感谢分享。</p>
+            </div>
+            <div class="comment">
+                <h3>用户2</h3>
+                <p>装饰器的示例代码很清晰。希望以后能看到更多类似的帖子。</p>
+            </div>
+            <div class="comment-form">
+                <h2>添加评论</h2>
+                <form action="postI.php" method="post">
+                    <textarea name="comment" rows="4" placeholder="在这里输入评论..." required></textarea>
+                    <button type="submit">提交评论</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    <div class="footer">
+        <p>© 浙江大学srtp项目 版权所有.</p>
+    </div>
+</body>
+</html>
