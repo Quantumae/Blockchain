@@ -4,24 +4,24 @@ $username = "root";
 $password = "";
 $dbname = "forum";
 
-// ´´½¨Á¬½Ó
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// ¼ì²éÁ¬½Ó
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 if(!$conn){
     die("Connection failed. Reason:".mysqli_connect_error());
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = $_POST["username"];
-    $pass = password_hash($_POST["password"], PASSWORD_BCRYPT); // Ê¹ÓÃÃÜÂë¹þÏ£
+    $pass = password_hash($_POST["password"], PASSWORD_BCRYPT); // Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï£
 
     $sql = "INSERT INTO users (username, password) VALUES ('$user', '$pass')";
 
     if ($conn->query($sql) === TRUE) {
         echo "success";
         header("Location: login.html");
-        exit(); // È·±£½Å±¾Í£Ö¹Ö´ÐÐ
+        exit();
     } else {
         echo "there is something wrong " . $conn->error;
     }

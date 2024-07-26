@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "E:\\XAMPP\\htdocs\\blockchain\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\\u6D4F\u89C8\u5668\u5BBD\u5EA6\u68C0\u6D4B.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:qukuailian_daima\\\u6D4F\u89C8\u5668\u5BBD\u5EA6\u68C0\u6D4B.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:qukuailian_daima\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:qukuailian_daima\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\login.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:qukuailian_daima\\login.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\signup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:qukuailian_daima\\signup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\signup.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:qukuailian_daima\\signup.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\entertainment.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:qukuailian_daima\\entertainment.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\board.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:qukuailian_daima\\board.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\life.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:qukuailian_daima\\life.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\tech.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:qukuailian_daima\\tech.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\XAMPP\\htdocs\\blockchain\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\\u6D4F\u89C8\u5668\u5BBD\u5EA6\u68C0\u6D4B.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:qukuailian_daima\\\u6D4F\u89C8\u5668\u5BBD\u5EA6\u68C0\u6D4B.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\about_us.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -22,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +66,124 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "entertainment.html",
+              "DocumentMoniker": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\entertainment.html",
+              "RelativeDocumentMoniker": "qukuailian_daima\\entertainment.html",
+              "ToolTip": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\entertainment.html",
+              "RelativeToolTip": "qukuailian_daima\\entertainment.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-26T06:41:24.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "board.html",
+              "DocumentMoniker": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\board.html",
+              "RelativeDocumentMoniker": "qukuailian_daima\\board.html",
+              "ToolTip": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\board.html",
+              "RelativeToolTip": "qukuailian_daima\\board.html",
+              "ViewState": "AQIAAFcAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-26T06:41:05.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "life.html",
+              "DocumentMoniker": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\life.html",
+              "RelativeDocumentMoniker": "qukuailian_daima\\life.html",
+              "ToolTip": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\life.html",
+              "RelativeToolTip": "qukuailian_daima\\life.html",
+              "ViewState": "AQIAAEsAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-26T06:16:43.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "home.html",
+              "DocumentMoniker": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\home.html",
+              "RelativeDocumentMoniker": "qukuailian_daima\\home.html",
+              "ToolTip": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\home.html",
+              "RelativeToolTip": "qukuailian_daima\\home.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-26T06:16:11.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "tech.html",
+              "DocumentMoniker": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\tech.html",
+              "RelativeDocumentMoniker": "qukuailian_daima\\tech.html",
+              "ToolTip": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\tech.html",
+              "RelativeToolTip": "qukuailian_daima\\tech.html",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAIwG0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-26T06:14:22.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "signup.html",
+              "DocumentMoniker": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\signup.html",
+              "RelativeDocumentMoniker": "qukuailian_daima\\signup.html",
+              "ToolTip": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\signup.html",
+              "RelativeToolTip": "qukuailian_daima\\signup.html",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAE8AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-26T05:27:13.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "signup.php",
+              "DocumentMoniker": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\signup.php",
+              "RelativeDocumentMoniker": "qukuailian_daima\\signup.php",
+              "ToolTip": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\signup.php",
+              "RelativeToolTip": "qukuailian_daima\\signup.php",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2024-07-26T05:26:18.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "login.html",
+              "DocumentMoniker": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\login.html",
+              "RelativeDocumentMoniker": "qukuailian_daima\\login.html",
+              "ToolTip": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\login.html",
+              "RelativeToolTip": "qukuailian_daima\\login.html",
+              "ViewState": "AQIAAC0AAAAAAAAAAADwv1QAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-26T05:25:47.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "login.php",
+              "DocumentMoniker": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\login.php",
+              "RelativeDocumentMoniker": "qukuailian_daima\\login.php",
+              "ToolTip": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\login.php",
+              "RelativeToolTip": "qukuailian_daima\\login.php",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2024-07-26T05:25:38.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "about_us.html",
               "DocumentMoniker": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\about_us.html",
               "RelativeDocumentMoniker": "qukuailian_daima\\about_us.html",
@@ -38,25 +191,24 @@
               "RelativeToolTip": "qukuailian_daima\\about_us.html",
               "ViewState": "AQIAAD8AAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-07-20T08:45:02.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-20T08:45:02.452Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "README.md",
               "DocumentMoniker": "E:\\XAMPP\\htdocs\\blockchain\\README.md",
               "RelativeDocumentMoniker": "README.md",
               "ToolTip": "E:\\XAMPP\\htdocs\\blockchain\\README.md",
               "RelativeToolTip": "README.md",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwUAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2024-07-20T08:10:30.808Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "\u6D4F\u89C8\u5668\u5BBD\u5EA6\u68C0\u6D4B.html",
               "DocumentMoniker": "E:\\XAMPP\\htdocs\\blockchain\\qukuailian_daima\\\u6D4F\u89C8\u5668\u5BBD\u5EA6\u68C0\u6D4B.html",
               "RelativeDocumentMoniker": "qukuailian_daima\\\u6D4F\u89C8\u5668\u5BBD\u5EA6\u68C0\u6D4B.html",

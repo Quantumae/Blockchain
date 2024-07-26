@@ -4,17 +4,17 @@ $username = "root";
 $password = "";
 $dbname = "forum";
 
-// ´´½¨Á¬½Ó
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// ¼ì²éÁ¬½Ó
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 if ($conn->connect_error) {
-    die("Á¬½ÓÊ§°Ü: " . $conn->connect_error);
+    die("ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½: " . $conn->connect_error);
 }
 
-// ´¦Àí±íµ¥Êý¾Ý
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $user = $conn->real_escape_string($_POST["username"]);
+    $user = $conn->real_escape_string($_POST["public_key"]);
     $pass = $_POST["password"];
 
     $sql = "SELECT password FROM users WHERE username='$user'";
@@ -23,9 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         if (password_verify($pass, $row['password'])) {
-            // µÇÂ¼³É¹¦ºóÌø×ªµ½°Ù¶È
             header("Location: home.html");
-            exit(); // È·±£½Å±¾Í£Ö¹Ö´ÐÐ
+            exit();
         } else {
             echo "wrong password";
         }

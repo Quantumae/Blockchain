@@ -36,6 +36,23 @@
             padding: 10px;
             text-align: center;
         }
+        .moving-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px; /* 根据需要调整图片宽度 */
+            height: 100px; /* 根据需要调整图片高度 */
+            animation: move 5s linear infinite;
+        }
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(100vw, 100vh);
+            }
+        }
         .nav a {
             color: #fff;
             margin: 0 15px;
@@ -136,11 +153,11 @@
         <a href="about_us.html">关于我们</a>
         <a href="call_us.html">联系我们</a>
     </div>
+    <div class="moving-image">
+        <img src="ZJU.png" alt="论坛轮播图">
+    </div>
     <div class="container">
         <div class="welcome">
-            <div class="carousel">
-                <img src="ZJU.png" alt="论坛轮播图">
-            </div>
             <h2>欢迎来到白度贴巴论坛</h2>
             <p>在这里你可以讨论技术问题，分享生活趣事，了解最新娱乐八卦，以及获取丰富的学习资源。加入我们的讨论，与全球的用户交流互动。</p>
         </div>
