@@ -30,6 +30,24 @@
             padding: 5px 10px;
             border-radius: 5px;
         }
+        .moving-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px; /* 根据需要调整图片宽度 */
+            height: 50px; /* 根据需要调整图片高度 */
+            animation: move 5s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(100vw, 100vh);
+            }
+        }
         .nav {
             background-color: #66ccff;
             color: #fff;
@@ -124,6 +142,11 @@
     </style>
 </head>
 <body>
+    <div class="moving-image">
+        <a href="https://www.zju.edu.cn/" target="_blank">
+            <img src="ZJU.png" alt="论坛轮播图">
+        </a>
+    </div>
     <div class="login">
         <a href="login.html">登录</a>
     </div>
@@ -138,9 +161,6 @@
     </div>
     <div class="container">
         <div class="welcome">
-            <div class="carousel">
-                <img src="ZJU.png" alt="论坛轮播图">
-            </div>
             <h2>欢迎来到白度贴巴论坛</h2>
             <p>在这里你可以讨论技术问题，分享生活趣事，了解最新娱乐八卦，以及获取丰富的学习资源。加入我们的讨论，与全球的用户交流互动。</p>
         </div>
