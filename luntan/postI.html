@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>如何在Python中使用装饰器？</title>
+    <title>帖子详情</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,6 +17,15 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+        }
+
+        .post-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .post-content {
+            line-height: 1.6;
         }
 
         .nav {
@@ -35,6 +44,13 @@
         .container {
             width: 80%;
             margin: auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .container2 {
+            width: 80%;
+            margin: auto;
             max-width: 1200px;
             background-color: #fff;
             padding: 20px;
@@ -42,72 +58,42 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .post-title {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .post-content {
-            line-height: 1.6;
-        }
-
-        .comment-section {
-            margin-top: 40px;
-        }
-
-            .comment-section h2 {
-                background-color: #ddd;
-                padding: 10px;
-                border-radius: 5px;
-            }
-
         .comment {
             background-color: #fff;
-            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .comment-form {
+            background-color: #fff;
             padding: 15px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-            .comment h3 {
-                margin-top: 0;
-            }
-
-        .comment-form {
-            margin-top: 20px;
-        }
-
             .comment-form textarea {
                 width: 100%;
                 padding: 10px;
+                border-radius: 4px;
                 border: 1px solid #ddd;
-                border-radius: 5px;
-                box-sizing: border-box;
                 margin-bottom: 10px;
+                box-sizing: border-box;
             }
 
             .comment-form button {
                 padding: 10px 20px;
                 border: none;
-                border-radius: 5px;
+                border-radius: 4px;
                 background-color: #007bff;
                 color: #fff;
                 cursor: pointer;
             }
 
-                .comment-form button:hover {
-                    background-color: #0056b3;
-                }
-
-        .footer {
-            background-color: #66ccff;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
+            .comment-form button:hover {
+                background-color: #0056b3;
+            }
     </style>
 </head>
 <body>
@@ -120,7 +106,8 @@
         <a href="about_us.html">关于我们</a>
         <a href="call_us.html">联系我们</a>
     </div>
-    <div class="container">
+
+    <div class="container2">
         <div class="post-title">
             <h1>如何在Python中使用装饰器？</h1>
         </div>
@@ -143,33 +130,60 @@ def say_hello(name):
 say_hello("World")</code></pre>
             <p>在上面的示例中，`decorator` 是一个装饰器，它在调用 `say_hello` 函数之前和之后打印一些消息。使用 `@decorator` 语法，我们可以将装饰器应用于 `say_hello` 函数。</p>
         </div>
-        <div class="comment-section">
-            <h2>评论区</h2>
-            <div class="comment">
-                <h3>用户1</h3>
-                <p>这是一个非常有用的帖子！感谢分享。</p>
-            </div>
-            <div class="comment">
-                <h3>用户2</h3>
-                <p>装饰器的示例代码很清晰。希望以后能看到更多类似的帖子。</p>
-            </div>
-            <div class="comment-form">
-                <h2>添加评论</h2>
-                <form action="postI.php" method="post">
-                    <textarea name="comment" rows="4" placeholder="在这里输入评论..." required></textarea>
-                    <button type="submit">提交评论</button>
-                </form>
-            </div>
+    </div>
+
+    <div class="container">
+        <div class="comment-form">
+            <h2>添加评论</h2>
+            <form id="comment-form">
+                <textarea id="comment-content" rows="4" placeholder="请输入评论..."></textarea>
+                <button type="submit">提交评论</button>
+            </form>
+        </div>
+        <div id="comments-container">
+            <!-- 评论将被动态加载到这里 -->
         </div>
     </div>
-    <div>
-        <br />
-        <br />
-        <br />
-        <br />
-    </div>
-    <div class="footer">
-        <p>© 浙江大学srtp项目 版权所有.</p>
-    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const commentsContainer = document.getElementById('comments-container');
+            const commentForm = document.getElementById('comment-form');
+            const commentContent = document.getElementById('comment-content');
+
+            // 加载评论
+            function loadComments() {
+                fetch('get_comments.php')
+                    .then(response => response.json())
+                    .then(data => {
+                        commentsContainer.innerHTML = ''; // 清空评论容器
+                        data.forEach(comment => {
+                            const commentDiv = document.createElement('div');
+                            commentDiv.className = 'comment';
+                            commentDiv.innerHTML = `<p>${comment.content}</p>`;
+                            commentsContainer.appendChild(commentDiv);
+                        });
+                    });
+            }
+
+            // 提交评论
+            commentForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                fetch('add_comment.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams({
+                        content: commentContent.value
+                    })
+                }).then(() => {
+                    commentContent.value = ''; // 清空文本框
+                    loadComments(); // 重新加载评论
+                });
+            });
+
+            loadComments(); // 页面加载时加载评论
+        });</script>
 </body>
 </html>

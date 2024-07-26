@@ -26,9 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         if (password_verify($pass, $row['password'])) {
-            // 登录成功后跳转到百度
-            header("Location: http://www.baidu.com");
-            exit(); // 确保脚本停止执行
+            header("Location: home.html");
+            exit();
         } else {
             echo "密码错误";
         }

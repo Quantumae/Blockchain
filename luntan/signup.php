@@ -20,6 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         echo "注册成功";
+        header("Location: login.html");
+        exit();
     } else {
         echo "注册失败: " . $conn->error;
     }
