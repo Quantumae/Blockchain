@@ -8,7 +8,7 @@ drawio文件请使用https://www.drawio.com/网站打开
 2024.7.26 成功连接上数据库，加入验证页面
 		  目前已有框架：论坛
 						用户端验证
-2024.7.27 目前登录界面的公钥其实是用户名
+2024.7.27 目前登录界面的公钥其实是用户名（已解决）
 
 http://localhost/blockchain/communication/check.html
 http://localhost/blockchain/luntan/home.html
