@@ -13,7 +13,7 @@ if(!$conn){
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $user = $_POST["username"];
+    $user = $_POST["public_key"];
     $pass = password_hash($_POST["password"], PASSWORD_BCRYPT); // 使用密码哈希
 
     $sql = "INSERT INTO users (username, password) VALUES ('$user', '$pass')";
