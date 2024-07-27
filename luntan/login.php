@@ -17,7 +17,7 @@ else{
 
 // 处理表单数据
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $user = $conn->real_escape_string($_POST["username"]);
+    $user = $conn->real_escape_string($_POST["public_key"]);
     $pass = $_POST["password"];
 
     $sql = "SELECT password FROM users WHERE username='$user'";
