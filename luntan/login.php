@@ -1,4 +1,6 @@
 <?php
+session_start(); // 启动会话管理
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -11,28 +13,28 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("连接失败: " . $conn->connect_error);
 }
-else{
-    echo"connected";
-}
 
 // 处理表单数据
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $user = $conn->real_escape_string($_POST["public_key"]);
-    $pass = $_POST["password"];
+    $username = $conn->real_escape_string($_POST["public_key"]);
+    $password = $_POST["password"];
 
-    $sql = "SELECT password FROM users WHERE username='$user'";
+    // 查找用户
+    $sql = "SELECT id, password FROM users WHERE username='$username'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
-        if (password_verify($pass, $row['password'])) {
-            header("Location: home.html");
+        if (password_verify($password, $row['password'])) {
+            // 登录成功，设置会话变量
+            $_SESSION['user_id'] = $row['id'];
+            header("Location: home.php"); // 重定向到主页
             exit();
         } else {
             echo "密码错误";
         }
     } else {
-        echo "用户名不存在";
+        echo "公钥不存在";
     }
 } else {
     echo "无效的请求方法";
