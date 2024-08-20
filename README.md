@@ -9,7 +9,10 @@ drawio文件请使用https://www.drawio.com/网站打开
 		  目前已有框架：论坛
 						用户端验证
 2024.7.27 目前登录界面的公钥其实是用户名（已解决）
-2024.7.297 test
+2024.8.20 完成大部分前端代码的编写
+		  目前已有框架：论坛
+						用户端验证
+						商店
 
 http://localhost/blockchain/communication/check.html
 http://localhost/blockchain/luntan/home.html
