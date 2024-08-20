@@ -12,3 +12,4 @@ drawio文件请使用https://www.drawio.com/网站打开
 
 http://localhost/blockchain/communication/check.html
 http://localhost/blockchain/luntan/home.html
+http://localhost/blockchain/shop/home.php
