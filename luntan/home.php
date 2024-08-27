@@ -154,10 +154,10 @@
         <h1>白度贴巴</h1>
     </div>
     <div class="nav">
-        <a href="home.html">首页</a>
-        <a href="board.html">论坛版块</a>
-        <a href="about_us.html">关于我们</a>
-        <a href="call_us.html">联系我们</a>
+        <a href="home.php">首页</a>
+        <a href="board.php">论坛版块</a>
+        <a href="about_us.php">关于我们</a>
+        <a href="call_us.php">联系我们</a>
     </div>
     <div class="container">
         <div class="welcome">
@@ -171,10 +171,10 @@
         <div class="section">
             <h2>热门版块</h2>
             <ul class="board-list">
-                <li><a href="tech.html">技术讨论区</a></li>
-                <li><a href="life.html">生活闲聊区</a></li>
-                <li><a href="entertainment.html">娱乐八卦区</a></li>
-                <li><a href="resources.html">学习资源区</a></li>
+                <li><a href="tech.php">技术讨论区</a></li>
+                <li><a href="life.php">生活闲聊区</a></li>
+                <li><a href="entertainment.php">娱乐八卦区</a></li>
+                <li><a href="resources.php">学习资源区</a></li>
             </ul>
         </div>
         <div class="section">

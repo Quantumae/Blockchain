@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>联系我们</title>
+    <title>关于我们</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,6 +47,15 @@
             overflow: hidden;
             max-width: 1200px;
         }
+        .footer {
+            background-color: #66ccff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
         .section {
             margin: 20px 0;
             padding: 20px;
@@ -56,15 +65,6 @@
         }
         .section h2 {
             margin-top: 0;
-        }
-        .footer {
-            background-color: #66ccff;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
         .contact-info {
             line-height: 1.6;
@@ -79,19 +79,25 @@
         <h1>关于我们</h1>
     </div>
     <div class="nav">
-        <a href="home.html">首页</a>
-        <a href="board.html">论坛板块</a>
-        <a href="about_us.html">关于我们</a>
-        <a href="call_us.html">联系我们</a>
+        <a href="home.php">首页</a>
+        <a href="board.php">论坛版块</a>
+        <a href="about_us.php">关于我们</a>
+        <a href="call_us.php">联系我们</a>
     </div>
     <div class="container">
         <div class="section">
-            <h2>联系我们</h2>
-            <div class="contact-info">
-                <p>邮箱: <a href="mailto:3220104514@zju.edu.cn">3220104514@zju.edu.cn</a></p>
-                <p>电话: +86 195 XXXX XXXX</p>
-                <p>地址: 中国浙江省杭州市西湖区三墩镇余杭塘路866号浙江大学</p>
-            </div>
+            <h2>我们的愿景与使命</h2>
+            <p>我们致力于提供一个友好、互动的社区平台，汇集各界人士的智慧和经验。我们的使命是通过优质的内容和互动体验，促进知识共享和社区建设。</p>
+        </div>
+        <div class="section">
+            <h2>团队介绍</h2>
+            <p>我们的团队由一群充满激情的老师和学生组成，我们每个人都致力于推动平台的发展和优化。</p>
+            <ul>
+                <li><strong>陈建海</strong> - 指导教师</li>
+                <li><strong>苏家豪</strong> - 组长</li>
+                <li><strong>李嘉锐</strong> - 组员</li>
+                <li><strong>赵伟  </strong> - 组员</li>
+            </ul>
         </div>
     </div>
     <div class="footer">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>技术交流区</title>
+    <title>生活闲聊区</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,7 +51,7 @@
             width: 80%;
             margin: auto;
             overflow: hidden;
-            max-width: 1200px; /* 设置最大宽度 */
+            max-width: 1200px;
         }
 
         .section {
@@ -89,14 +89,14 @@
         <h1>关于我们</h1>
     </div>
     <div class="nav">
-        <a href="home.html">首页</a>
-        <a href="board.html">论坛板块</a>
-        <a href="about_us.html">关于我们</a>
-        <a href="call_us.html">联系我们</a>
+        <a href="home.php">首页</a>
+        <a href="board.php">论坛版块</a>
+        <a href="about_us.php">关于我们</a>
+        <a href="call_us.php">联系我们</a>
     </div>
     <div class="container">
         <div class="section">
-            <h2>技术交流区</h2>
+            <h2>生活闲聊区</h2>
             <div class="contact-info">
                 <p>哼，才...才不是没有做呢，只是...只是没有做好而已>_<</p>
             </div>

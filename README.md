@@ -13,7 +13,8 @@ drawio文件请使用https://www.drawio.com/网站打开
 		  目前已有框架：论坛
 						用户端验证
 						商店
+2024.8.27 完成数据库的大修改，现在论坛和商店的数据库不同了
 
 http://localhost/blockchain/communication/check.html
-http://localhost/blockchain/luntan/home.html
+http://localhost/blockchain/luntan/home.php
 http://localhost/blockchain/shop/home.php

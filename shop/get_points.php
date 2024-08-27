@@ -4,7 +4,7 @@ session_start(); // 启动会话管理
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "forum";
+$dbname = "shop";
 
 // 创建连接
 $conn = new mysqli($servername, $username, $password, $dbname);

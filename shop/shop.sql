@@ -4,8 +4,8 @@ cd \xampp\mysql\bin
 mysql -u root
 再输入以下代码
 */
-CREATE DATABASE forum;
-USE forum;
+CREATE DATABASE shop;
+USE shop;
 
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
