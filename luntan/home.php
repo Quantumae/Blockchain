@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="zh">
 <head>
@@ -11,25 +14,29 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         .header {
             background-color: #66ccff;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
+
         .login {
             position: absolute;
             top: 10px;
             left: 10px;
         }
-        .login a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            background-color: #007bff;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
+
+            .login a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                background-color: #007bff;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+
         .moving-image {
             position: absolute;
             top: 0;
@@ -48,23 +55,27 @@
                 transform: translate(100vw, 100vh);
             }
         }
+
         .nav {
             background-color: #66ccff;
             color: #fff;
             padding: 10px;
             text-align: center;
         }
-        .nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
+
+            .nav a {
+                color: #fff;
+                margin: 0 15px;
+                text-decoration: none;
+            }
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
-            max-width: 1200px; 
+            max-width: 1200px;
         }
+
         .welcome {
             background-color: #fff;
             padding: 20px;
@@ -72,64 +83,77 @@
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
         .carousel {
             position: relative;
             overflow: hidden;
             border-radius: 5px;
             margin-bottom: 20px;
         }
-        .carousel img {
-            width: 100%;
-            border-radius: 5px;
-        }
+
+            .carousel img {
+                width: 100%;
+                border-radius: 5px;
+            }
+
         .search {
             text-align: center;
             margin: 20px 0;
         }
-        .search input[type="text"] {
-            width: 60%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .search button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            background-color: #007bff;
-            color: #fff;
-            cursor: pointer;
-        }
-        .search button:hover {
-            background-color: #0056b3;
-        }
+
+            .search input[type="text"] {
+                width: 60%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+            .search button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: #fff;
+                cursor: pointer;
+            }
+
+                .search button:hover {
+                    background-color: #0056b3;
+                }
+
         .section {
             margin: 20px 0;
         }
-        .section h2 {
-            background-color: #ddd;
-            padding: 10px;
-            border-radius: 5px;
-        }
+
+            .section h2 {
+                background-color: #ddd;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
         .board-list, .post-list, .popular-list {
             list-style: none;
             padding: 0;
         }
-        .board-list li, .post-list li, .popular-list li {
-            background-color: #fff;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .board-list li a, .post-list li a, .popular-list li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        .board-list li a:hover, .post-list li a:hover, .popular-list li a:hover {
-            color: #007bff;
-        }
+
+            .board-list li, .post-list li, .popular-list li {
+                background-color: #fff;
+                margin: 10px 0;
+                padding: 15px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+                .board-list li a, .post-list li a, .popular-list li a {
+                    text-decoration: none;
+                    color: #333;
+                    font-weight: bold;
+                }
+
+                    .board-list li a:hover, .post-list li a:hover, .popular-list li a:hover {
+                        color: #007bff;
+                    }
+
         .footer {
             background-color: #66ccff;
             color: #fff;
@@ -148,7 +172,17 @@
         </a>
     </div>
     <div class="login">
-        <a href="login.html">登录</a>
+        <?php
+        if (isset($_SESSION['user_id'])) {
+        // 用户已登录，显示用户名
+        echo '<span>欢迎，' . htmlspecialchars($_SESSION['user_id']) . '</span>';
+        echo ' | <a href="logout.php">登出</a>';
+        } else {
+        // 用户未登录，显示登录和注册链接
+        echo '<a href="login.html">登录</a>';
+        echo '<a href="signup.html">注册</a>';
+        }
+        ?>
     </div>
     <div class="header">
         <h1>白度贴巴</h1>
