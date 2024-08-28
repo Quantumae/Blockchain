@@ -214,19 +214,19 @@
         <div class="section">
             <h2>最新帖子</h2>
             <ul class="post-list">
-                <li><a href="postI.html">如何在Python中使用装饰器？</a></li>
-                <li><a href="postII.html">区块链和元宇宙是什么？</a></li>
-                <li><a href="postIII.html">如何快速学习一门新语言？</a></li>
-                <li><a href="postIV.html">你最喜欢的旅行地是哪儿？</a></li>
+                <li><a href="postI.php">如何在Python中使用装饰器？</a></li>
+                <li><a href="postII.php">区块链和元宇宙是什么？</a></li>
+                <li><a href="postIII.php">如何快速学习一门新语言？</a></li>
+                <li><a href="postIV.php">你最喜欢的旅行地是哪儿？</a></li>
             </ul>
         </div>
         <div class="section">
             <h2>热门帖子</h2>
             <ul class="popular-list">
-                <li><a href="popularI.html">如何优化你的工作流程？</a></li>
-                <li><a href="popularII.html">2024年最值得关注的科技趋势</a></li>
-                <li><a href="popularIII.html">你试过的最好用的健身应用</a></li>
-                <li><a href="popularIV.html">旅行必备的技巧和建议</a></li>
+                <li><a href="popularI.php">如何优化你的工作流程？</a></li>
+                <li><a href="popularII.php">2024年最值得关注的科技趋势</a></li>
+                <li><a href="popularIII.php">你试过的最好用的健身应用</a></li>
+                <li><a href="popularIV.php">旅行必备的技巧和建议</a></li>
             </ul>
         </div>
     </div>

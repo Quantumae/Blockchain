@@ -143,10 +143,10 @@
         <div class="section">
             <h2>最新帖子</h2>
             <ul class="post-list">
-                <li><a href="postI.html">如何在Python中使用装饰器？</a></li>
-                <li><a href="postII.html">区块链和元宇宙是什么？</a></li>
-                <li><a href="postIII.html">如何快速学习一门新语言？</a></li>
-                <li><a href="postIV.html">你最喜欢的旅行地是哪儿？</a></li>
+                <li><a href="postI.php">如何在Python中使用装饰器？</a></li>
+                <li><a href="postII.php">区块链和元宇宙是什么？</a></li>
+                <li><a href="postIII.php">如何快速学习一门新语言？</a></li>
+                <li><a href="postIV.php">你最喜欢的旅行地是哪儿？</a></li>
             </ul>
         </div>
     </div>
