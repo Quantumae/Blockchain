@@ -1,5 +1,11 @@
 <?php
     session_start();
+
+    // 如果用户未登录，则重定向到登录页面
+    if (!isset($_SESSION['user_id'])) {
+        header('Location: login.html');
+        exit();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="zh">
