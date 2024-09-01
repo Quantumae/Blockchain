@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+Ôªø<!DOCTYPE html>
 <html lang="zh">
-<meta charset="UTF-8">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>…Í«Î±Ìµ•</title>
+    <title>Áî≥ËØ∑Ë°®Âçï</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -62,7 +62,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>…Í«Î±Ìµ•</h2>
+        <h2>Áî≥ËØ∑Ë°®Âçï</h2>
         <form action="submit.php" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -73,7 +73,7 @@
             <label for="year">Year:</label>
             <input type="number" id="year" name="year" required>
 
-            <input type="submit" value="Ã·Ωª">
+            <input type="submit" value="Êèê‰∫§">
         </form>
     </div>
 </body>

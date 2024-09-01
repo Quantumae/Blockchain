@@ -1,33 +1,35 @@
-<?php
-// Á¬½ÓÊý¾Ý¿â
+ï»¿<?php
+// è¿žæŽ¥æ•°æ®åº“
 $servername = "localhost";
-$username = "root"; // Ä¬ÈÏÓÃ»§ÃûÊÇroot
-$password = ""; // Ä¬ÈÏÃ»ÓÐÃÜÂë
-$dbname = "police"; // Êý¾Ý¿âÃûÎªpolice
+$username = "root"; // é»˜è®¤ç”¨æˆ·åæ˜¯root
+$password = ""; // é»˜è®¤æ²¡æœ‰å¯†ç 
+$dbname = "police"; // æ•°æ®åº“åä¸ºpolice
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
-    die("Á¬½ÓÊ§°Ü: " . $conn->connect_error);
+    die("è¿žæŽ¥å¤±è´¥: " . $conn->connect_error);
 }
 
-// »ñÈ¡±íµ¥Êý¾Ý
+// èŽ·å–è¡¨å•æ•°æ®
 $name = $_POST['name'];
 $public_key = $_POST['public_key'];
 $year = $_POST['year'];
+$id = $_POST['id'];
 
-// ·ÀÖ¹SQL×¢Èë
+// é˜²æ­¢SQLæ³¨å…¥
 $name = $conn->real_escape_string($name);
 $public_key = $conn->real_escape_string($public_key);
 $year = (int)$year;
+$id = (int)$id;
 
-// ²åÈëÊý¾Ý
-$sql = "INSERT INTO users (name, public_key, year, pass) VALUES ('$name', '$public_key', $year, 0)";
+// æ’å…¥æ•°æ®
+$sql = "INSERT INTO users (name, public_key, year, pass) VALUES ('$name', '$public_key', $year,$id, 0)";
 
 if ($conn->query($sql) === TRUE) {
-    echo "ÉêÇë³É¹¦£¡";
+    echo "ç”³è¯·æˆåŠŸï¼";
 } else {
-    echo "´íÎó: " . $sql . "<br>" . $conn->error;
+    echo "é”™è¯¯: " . $sql . "<br>" . $conn->error;
 }
 
 $conn->close();

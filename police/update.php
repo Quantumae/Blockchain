@@ -1,37 +1,37 @@
-<?php
-// Á¬½ÓÊý¾Ý¿â
+ï»¿<?php
+// è¿žæŽ¥æ•°æ®åº“
 $servername = "localhost";
-$username = "root"; // Ä¬ÈÏÓÃ»§ÃûÊÇroot
-$password = ""; // Ä¬ÈÏÃ»ÓÐÃÜÂë
-$dbname = "police"; // Êý¾Ý¿âÃûÎªpolice
+$username = "root"; // é»˜è®¤ç”¨æˆ·åæ˜¯root
+$password = ""; // é»˜è®¤æ²¡æœ‰å¯†ç 
+$dbname = "police"; // æ•°æ®åº“åä¸ºpolice
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
-    die("Á¬½ÓÊ§°Ü: " . $conn->connect_error);
+    die("è¿žæŽ¥å¤±è´¥: " . $conn->connect_error);
 }
 
-// »ñÈ¡´«µÝµÄ²ÎÊý
+// èŽ·å–ä¼ é€’çš„å‚æ•°
 if (isset($_GET['id']) && isset($_GET['action'])) {
     $id = $_GET['id'];
     $action = $_GET['action'];
 
-    // ¸üÐÂpassÖµ
+    // æ›´æ–°passå€¼
     $pass = ($action === 'approve') ? 1 : -1;
 
     $sql = "UPDATE users SET pass = $pass WHERE id = $id";
 
     if ($conn->query($sql) === TRUE) {
-        echo "ÉóºË×´Ì¬¸üÐÂ³É¹¦";
+        echo "å®¡æ ¸çŠ¶æ€æ›´æ–°æˆåŠŸ";
     } else {
         echo "Error updating record: " . $conn->error;
     }
 
-    // Ìø×ª»ØÉóºËÒ³Ãæ
+    // è·³è½¬å›žå®¡æ ¸é¡µé¢
     header('Location: index.php');
     exit;
 } else {
-    echo "ÎÞÐ§µÄÇëÇó";
+    echo "æ— æ•ˆçš„è¯·æ±‚";
 }
 
 $conn->close();

@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ÉóºËÒ³Ãæ</title>
+    <title>å®¡æ ¸é¡µé¢</title>
 </head>
 <body>
-    <h2>ÉóºËÊý¾Ý</h2>
+    <h2>å®¡æ ¸æ•°æ®</h2>
     <table border="1">
         <thead>
             <tr>
@@ -18,35 +18,35 @@
         </thead>
         <tbody>
             <?php
-            // Á¬½ÓÊý¾Ý¿â
+            // è¿žæŽ¥æ•°æ®åº“
             $servername = "localhost";
-            $username = "root"; // Ä¬ÈÏÓÃ»§ÃûÊÇroot
-            $password = ""; // Ä¬ÈÏÃ»ÓÐÃÜÂë
-            $dbname = "police"; // Êý¾Ý¿âÃûÎªpolice
+            $username = "root"; // é»˜è®¤ç”¨æˆ·åæ˜¯root
+            $password = ""; // é»˜è®¤æ²¡æœ‰å¯†ç 
+            $dbname = "police"; // æ•°æ®åº“åä¸ºpolice
 
             $conn = new mysqli($servername, $username, $password, $dbname);
 
             if ($conn->connect_error) {
-                die("Á¬½ÓÊ§°Ü: " . $conn->connect_error);
+                die("è¿žæŽ¥å¤±è´¥: " . $conn->connect_error);
             }
 
-            // ²éÑ¯passÖµÎª0µÄÊý¾Ý
-            $sql = "SELECT name, public_key, year FROM your_table WHERE pass = 0";
+            // æŸ¥è¯¢passå€¼ä¸º0çš„æ•°æ®
+            $sql = "SELECT name, public_key, year FROM users WHERE pass = 0";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
-                // Êä³öÊý¾Ý
+                // è¾“å‡ºæ•°æ®
                 while($row = $result->fetch_assoc()) {
                     echo "<tr>";
                     echo "<td>" . $row["name"] . "</td>";
                     echo "<td>" . $row["public_key"] . "</td>";
                     echo "<td>" . $row["year"] . "</td>";
-                    echo '<td><a href="update.php?id=' . $row["id"] . '&action=approve">Í¨¹ý</a> | ';
-                    echo '<a href="update.php?id=' . $row["id"] . '&action=reject">²»Í¨¹ý</a></td>';
+                    echo '<td><a href="update.php?id=' . $row["id"] . '&action=approve">é€šè¿‡</a> | ';
+                    echo '<a href="update.php?id=' . $row["id"] . '&action=reject">ä¸é€šè¿‡</a></td>';
                     echo "</tr>";
                 }
             } else {
-                echo "<tr><td colspan='4'>Ã»ÓÐ´ýÉóºËµÄÊý¾Ý</td></tr>";
+                echo "<tr><td colspan='4'>æ²¡æœ‰å¾…å®¡æ ¸çš„æ•°æ®</td></tr>";
             }
             $conn->close();
             ?>
