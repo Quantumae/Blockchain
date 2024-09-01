@@ -12,20 +12,26 @@ if ($conn->connect_error) {
 }
 
 // 获取传递的参数
-if (isset($_GET['id']) && isset($_GET['action'])) {
-    $id = $_GET['id'];
+if (isset($_GET['public_key']) && isset($_GET['action'])) {
+    $public_key = $_GET['public_key'];
     $action = $_GET['action'];
 
     // 更新pass值
     $pass = ($action === 'approve') ? 1 : -1;
 
-    $sql = "UPDATE users SET pass = $pass WHERE id = $id";
+    // 使用prepared statement防止SQL注入
+    $sql = "UPDATE users SET pass = ? WHERE public_key = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("is", $pass, $public_key);
 
-    if ($conn->query($sql) === TRUE) {
+    if ($stmt->execute()) {
         echo "审核状态更新成功";
     } else {
-        echo "Error updating record: " . $conn->error;
+        echo "Error updating record: " . $stmt->error;
     }
+
+    // 关闭statement
+    $stmt->close();
 
     // 跳转回审核页面
     header('Location: index.php');
