@@ -19,7 +19,7 @@ if (isset($_GET['id']) && isset($_GET['action'])) {
     // 更新pass值
     $pass = ($action === 'approve') ? 1 : -1;
 
-    $sql = "UPDATE your_table SET pass = $pass WHERE id = $id";
+    $sql = "UPDATE users SET pass = $pass WHERE id = $id";
 
     if ($conn->query($sql) === TRUE) {
         echo "审核状态更新成功";

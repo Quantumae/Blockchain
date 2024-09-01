@@ -22,7 +22,7 @@ $public_key = $conn->real_escape_string($public_key);
 $year = (int)$year;
 
 // 插入数据
-$sql = "INSERT INTO your_table (name, public_key, year, pass) VALUES ('$name', '$public_key', $year, 0)";
+$sql = "INSERT INTO users (name, public_key, year, pass) VALUES ('$name', '$public_key', $year, 0)";
 
 if ($conn->query($sql) === TRUE) {
     echo "申请成功！";
