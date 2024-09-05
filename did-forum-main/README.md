@@ -26,8 +26,9 @@
 
 ```bash
 cd ./chaincode
-npm install
-
+cd ./go
+go mod vendor
+cd ..
 cd ..
 ./startFabric.sh
 ```

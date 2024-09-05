@@ -31,10 +31,10 @@ type DIDDocument struct {
     Controller           interface{}           `json:"controller,omitempty"` // Can be string or string array
     VerificationMethod   []VerificationMethod  `json:"verificationMethod,omitempty"`
     Authentication       interface{}         `json:"authentication,omitempty"` // Can be string or VerificationMethod
-    AssertionMethod      []interface{}         `json:"assertionMethod,omitempty"` // Can be string or VerificationMethod
-    KeyAgreement         []interface{}         `json:"keyAgreement,omitempty"` // Can be string or VerificationMethod
-    CapabilityInvocation []interface{}         `json:"capabilityInvocation,omitempty"` // Can be string or VerificationMethod
-    CapabilityDelegation []interface{}         `json:"capabilityDelegation,omitempty"` // Can be string or VerificationMethod
+    AssertionMethod      interface{}         `json:"assertionMethod,omitempty"` // Can be string or VerificationMethod
+    KeyAgreement         interface{}         `json:"keyAgreement,omitempty"` // Can be string or VerificationMethod
+    CapabilityInvocation interface{}         `json:"capabilityInvocation,omitempty"` // Can be string or VerificationMethod
+    CapabilityDelegation interface{}         `json:"capabilityDelegation,omitempty"` // Can be string or VerificationMethod
     Service              []ServiceEndpoint     `json:"service,omitempty"`
     Created              string                `json:"created"`
     Updated              string                `json:"updated"`

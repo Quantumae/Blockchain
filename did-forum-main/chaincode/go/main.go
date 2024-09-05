@@ -9,7 +9,6 @@ import (
 type SmartContract struct {
     contractapi.Contract
     DIDContract
-    NFTicketContract
 }
 
 // main函数是Fabric智能合约的入口点
