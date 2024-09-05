@@ -20,3 +20,14 @@ http://localhost/blockchain/luntan/home.php
 http://localhost/blockchain/shop/home.php
 http://localhost/blockchain/police/apply.php
 http://localhost/blockchain/police/index.php
+
+## 项目介绍
+
+### 将localhostXampp部署到服务器上
+
+### 运行主程序
+```bash
+cd ./did-forum-main
+
+./README.md
+```
